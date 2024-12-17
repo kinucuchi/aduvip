@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị Ảnh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        #image-container {
+            display: none; /* Ẩn ảnh ban đầu */
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nhấn nút để hiển thị ảnh</h1>
+    <button onclick="showImage()">Hiển thị ảnh</button>
+
+    <!-- Khu vực chứa ảnh -->
+    <div id="image-container">
+        <img id="displayed-image" src="IMG20240615195835.jpg" alt="Ảnh của bạn">
+    </div>
+
+    <script>
+        function showImage() {
+            // Hiển thị phần chứa ảnh
+            document.getElementById('image-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
